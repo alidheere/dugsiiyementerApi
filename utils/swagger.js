@@ -12,7 +12,7 @@ const options = {
     },
     servers: [
       {
-        url:  process.env.NODE-ENV == " development"?'http://localhost:5000': "https://dugsiiyementerapi.onrender.com"
+        url:  process.env.NODE_ENV == " development"?'http://localhost:5000': "https://dugsiiyementerapi.onrender.com"
       }
     ],
     components: {
