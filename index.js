@@ -46,6 +46,8 @@ app.use(notFound);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
+console.log("NODE_ENV:", process.env.NODE_ENV);
+console.log("Mongo URI exists:", !!PORT);
 mongoose
   .connect(process.env.NODE_ENV === "development"?  process.env.MONGO_URI_DEV: process.env.MONGO_URI_PRO)
   .then(() => {
