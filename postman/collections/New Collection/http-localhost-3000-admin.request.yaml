@@ -1,0 +1,6 @@
+$kind: http-request
+name: http://localhost:3000/admin
+description: ""
+url: http://localhost:3000/admin
+method: GET
+order: 1788284541882
