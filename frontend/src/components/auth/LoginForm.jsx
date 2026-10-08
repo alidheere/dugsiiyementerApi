@@ -10,8 +10,8 @@ import {
   CardTitle,
 } from "../ui/card";
 
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
+import { Input } from "@/comopnents/ui/input";
+import { Button } from "@/comopnents/ui/button";
 
 import { LoaderCircle } from "lucide-react";
 import { useNavigate } from "react-router";
