@@ -1,22 +1,14 @@
 
-// import Task from "../models/task.js";
-
-// export const createTask=async(req ,res,next)=>{
-//     try {
-//         const tasks = await tasks.create({...req.body, createBy:req.user._id})
-//         res.status(201).json(tasks)
-//     } catch (error) {
-//         next(error)
-//     }
-// }
-
 import Task from "../models/task.js";
+
+
+
 
 export const createTask = async (req, res, next) => {
   try {
     const task = await Task.create({
       ...req.body,
-      createdBy: req.user._id
+       createdBy:req.user._id
     });
 
     res.status(201).json(task);
@@ -27,9 +19,8 @@ export const createTask = async (req, res, next) => {
 
 export const getMyTasks = async (req, res, next) => {
   try {
-    const tasks = await Task.find({
-      createdBy: req.user._id
-    });
+    const tasks = await Task.find(
+   );
 
     res.json(tasks);
   } catch (error) {

@@ -18,7 +18,7 @@ const router= express.Router();
  *         description: Unauthorized
  */
 
-router.get('/', protect, getMyTasks)
+router.get('/',protect, getMyTasks)
 /**
  * @swagger
  * /tasks:
@@ -49,7 +49,7 @@ router.get('/', protect, getMyTasks)
  *       201:
  *         description: Task created
  */
-router.post('/', protect, createTask)
+router.post('/',protect, createTask)
 
 /**
  * @swagger
