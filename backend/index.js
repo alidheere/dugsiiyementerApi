@@ -21,7 +21,7 @@ import { limiter } from "./middlewares/rateLimit.js";
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://dugsiiyementerapi-1.onrender.com",
 }));
 
 app.use(express.json());
